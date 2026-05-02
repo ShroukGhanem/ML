@@ -15,9 +15,7 @@ app = FastAPI()
 # 2. Load trained model
 # ----------------------------
 model = joblib.load("model.pkl")
-print(model.predict([[1]]))
-print(model.predict([[10]]))
-print(model.predict([[50]]))
+
 # ----------------------------
 # 3. Prediction endpoint
 # ----------------------------

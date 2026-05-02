@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  ml-service:
+    build: ./ml-service
+    ports:
+      - "8000:8000"
+
+  function:
+    build: ./azure-function-simulator
+    depends_on:
+      - ml-service
